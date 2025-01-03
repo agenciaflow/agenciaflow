@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacia Elegante</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #333, #555);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            opacity: 0.8;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 5.5rem;
+            z-index: 999;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #555;
+        }
+        .hero {
+            height: 60vh;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            position: relative;
+        }
+        .content h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: #333;
+            margin: 0.5rem auto 0;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-around;
+        }
+        .card {
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: calc(33% - 2rem);
+            min-width: 280px;
+        }
+        .card img {
+            width: 100%;
+            display: block;
+        }
+        .card h3 {
+            margin: 1rem;
+            font-size: 1.25rem;
+            color: #333;
+        }
+        .card p {
+            margin: 0 1rem 1rem;
+            color: #666;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Advocacia Elegante</h1>
+        <p>Soluções jurídicas sofisticadas para seus desafios legais</p>
+    </header>
+    <nav>
+        <a href="#about">Sobre</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <div class="hero">
+        <h1>Defendendo seus direitos com classe</h1>
+    </div>
+    <div class="content">
+        <section id="about">
+            <h2>Sobre Nós</h2>
+            <p>Advogados experientes com décadas de atuação nas principais áreas do Direito, comprometidos com a ética, eficiência e personalização do atendimento.</p>
+        </section>
+        <section id="services">
+            <h2>Serviços</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" alt="Direito Trabalhista">
+                    <h3>Direito Trabalhista</h3>
+                    <p>Soluções para empregados e empregadores.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" alt="Processos Cíveis">
+                    <h3>Processos Cíveis</h3>
+                    <p>Assistência em contratos, disputas e mais.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" alt="Consultoria Jurídica">
+                    <h3>Consultoria Jurídica</h3>
+                    <p>Orientação para pessoas físicas e jurídicas.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Advocacia Elegante. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
